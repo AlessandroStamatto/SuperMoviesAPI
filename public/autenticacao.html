@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Autenticação com Firebase</title>
+    <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-auth.js"></script>
+    <style>
+        #app{
+        width:50%;
+        margin: 100px auto;
+        }
+        .hide{
+        display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <input type="email" id="txtEmail" placeholder="Entre com o email" /> <br/>
+        <input type="password" id="txtPassword" placeholder="Entre com a senha" /><br/>
+        <button id="btnLogin" >Entrar</button>
+        <button id="btnSignUp" >Registrar</button>
+        <button id="btnLogOut" class="hide" >Sair</button>
+    </div>  
+    <div id="results"></div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+runtime: nodejs10
+
+instance_class: F2
+
+env_variables:
+  BUCKET_NAME: "superfilmesapi-gcs-bucket"
+
+handlers:
+- url: /stylesheets
+  static_dir: stylesheets
+
+- url: /static
+  static_dir: public
+
+- url: /.*
+  secure: always
+  redirect_http_response_code: 301
+  script: auto
